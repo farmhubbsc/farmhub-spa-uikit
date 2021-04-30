@@ -32,7 +32,7 @@ const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   background: rgba(75, 0, 255, 0.15);
   /* backdrop-filter: blur(2px); */
   border-radius: 10px;
-  border: 2px solid rgba(255, 255, 255, 0.18);
+  /* border: 2px solid rgba(255, 255, 255, 0.18); */
   box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;
   color: rgb(255, 255, 255);
   /* /Custom Farmhub Style/ */
