@@ -32,6 +32,15 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   border-bottom: solid 2px rgba(133, 133, 133, 0.1);
   z-index: 20;
   transform: translate3d(0, 0, 0);
+
+  /* Custom Farmhub Style */
+  background: rgba(75, 0, 255, 0.15);
+  /* backdrop-filter: blur(2px); */
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;
+  color: rgb(255, 255, 255);
+  /* /Custom Farmhub Style/ */
 `;
 
 const BodyWrapper = styled.div`
@@ -44,6 +53,16 @@ const Inner = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   margin-top: ${({ showMenu }) => (showMenu ? `${MENU_HEIGHT}px` : 0)};
   transition: margin-top 0.2s;
   transform: translate3d(0, 0, 0);
+
+  /* Custom Farmhub Style */
+  background: rgba(75, 0, 255, 0.15);
+  /* backdrop-filter: blur(2px); */
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;
+  color: rgb(255, 255, 255);
+  /* /Custom Farmhub Style/ */
+  
   ${({ theme }) => theme.mediaQueries.nav} {
     margin-left: ${({ isPushed }) => `${isPushed ? SIDEBAR_WIDTH_FULL : SIDEBAR_WIDTH_REDUCED}px`};
   }
