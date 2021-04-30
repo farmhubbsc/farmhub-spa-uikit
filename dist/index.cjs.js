@@ -2372,7 +2372,7 @@ var templateObject_1$9;
 
 var Icons = IconModule;
 Icons.MoonIcon; Icons.SunIcon; var LanguageIcon = Icons.LanguageIcon;
-var Container = styled__default['default'].div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n"])), function (_a) {
+var Container = styled__default['default'].div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n\n  /* Custom Farmhub Style */\n  background: rgba(75, 0, 255, 0.15);\n  /* backdrop-filter: blur(2px); */\n  border-radius: 10px;\n  border: 2px solid rgba(255, 255, 255, 0.18);\n  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;\n  color: rgb(255, 255, 255);\n  /* /Custom Farmhub Style/ */\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n\n  /* Custom Farmhub Style */\n  background: rgba(75, 0, 255, 0.15);\n  /* backdrop-filter: blur(2px); */\n  border-radius: 10px;\n  border: 2px solid rgba(255, 255, 255, 0.18);\n  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;\n  color: rgb(255, 255, 255);\n  /* /Custom Farmhub Style/ */\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
 });

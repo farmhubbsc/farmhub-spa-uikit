@@ -23,6 +23,15 @@ const Container = styled.div`
   padding: 8px 4px;
   background-color: ${({ theme }) => theme.nav.background};
   border-top: solid 2px rgba(133, 133, 133, 0.1);
+
+  /* Custom Farmhub Style */
+  background: rgba(75, 0, 255, 0.15);
+  /* backdrop-filter: blur(2px); */
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.18);
+  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;
+  color: rgb(255, 255, 255);
+  /* /Custom Farmhub Style/ */
 `;
 
 const PriceLink = styled.a`
