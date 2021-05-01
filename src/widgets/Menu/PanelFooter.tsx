@@ -31,6 +31,10 @@ const Container = styled.div`
   border: 2px solid rgba(255, 255, 255, 0.18);
   box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;
   color: rgb(255, 255, 255);
+
+  position: fixed;
+  bottom: 70px;
+  width: 100%;
   /* /Custom Farmhub Style/ */
 `;
 
