@@ -2372,9 +2372,12 @@ var templateObject_1$9;
 
 var Icons = IconModule;
 Icons.MoonIcon; Icons.SunIcon; var LanguageIcon = Icons.LanguageIcon;
-var Container = styled__default['default'].div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n\n  /* Custom Farmhub Style */\n  background: rgba(75, 0, 255, 0.15);\n  /* backdrop-filter: blur(2px); */\n  border-radius: 10px;\n  border: 2px solid rgba(255, 255, 255, 0.18);\n  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;\n  color: rgb(255, 255, 255);\n\n  position: fixed;\n  bottom: 70px;\n  width: 100%;\n  /* /Custom Farmhub Style/ */\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n\n  /* Custom Farmhub Style */\n  background: rgba(75, 0, 255, 0.15);\n  /* backdrop-filter: blur(2px); */\n  border-radius: 10px;\n  border: 2px solid rgba(255, 255, 255, 0.18);\n  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;\n  color: rgb(255, 255, 255);\n\n  position: fixed;\n  bottom: 70px;\n  width: 100%;\n  /* /Custom Farmhub Style/ */\n"])), function (_a) {
+var Container = styled__default['default'].div(templateObject_1$8 || (templateObject_1$8 = __makeTemplateObject(["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n\n  /* Custom Farmhub Style */\n  background: rgba(75, 0, 255, 0.15);\n  /* backdrop-filter: blur(2px); */\n  border-radius: 10px;\n  border: 2px solid rgba(255, 255, 255, 0.18);\n  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;\n  color: rgb(255, 255, 255);\n\n  position: fixed;\n  bottom: ", ";\n  width: 100%;\n  /* /Custom Farmhub Style/ */\n"], ["\n  flex: none;\n  padding: 8px 4px;\n  background-color: ", ";\n  border-top: solid 2px rgba(133, 133, 133, 0.1);\n\n  /* Custom Farmhub Style */\n  background: rgba(75, 0, 255, 0.15);\n  /* backdrop-filter: blur(2px); */\n  border-radius: 10px;\n  border: 2px solid rgba(255, 255, 255, 0.18);\n  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;\n  color: rgb(255, 255, 255);\n\n  position: fixed;\n  bottom: ", ";\n  width: 100%;\n  /* /Custom Farmhub Style/ */\n"])), function (_a) {
     var theme = _a.theme;
     return theme.nav.background;
+}, function (_a) {
+    var showMenu = _a.showMenu;
+    return (showMenu ? "70px" : 0);
 });
 var PriceLink = styled__default['default'].a(templateObject_2$3 || (templateObject_2$3 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"], ["\n  display: flex;\n  align-items: center;\n  svg {\n    transition: transform 0.3s;\n  }\n  :hover {\n    svg {\n      transform: scale(1.2);\n    }\n  }\n"])));
 var SettingsEntry = styled__default['default'].div(templateObject_3$1 || (templateObject_3$1 = __makeTemplateObject(["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"], ["\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  height: ", "px;\n  padding: 0 8px;\n"])), MENU_ENTRY_HEIGHT);
@@ -2438,7 +2441,7 @@ var Panel = function (props) {
     var isPushed = props.isPushed, showMenu = props.showMenu;
     return (React__default['default'].createElement(StyledPanel, { isPushed: isPushed, showMenu: showMenu },
         React__default['default'].createElement(PanelBody, __assign({}, props)),
-        React__default['default'].createElement(PanelFooter, __assign({}, props))));
+        React__default['default'].createElement(PanelFooter, __assign({ showMenu: showMenu }, props))));
 };
 var templateObject_1$7;
 
