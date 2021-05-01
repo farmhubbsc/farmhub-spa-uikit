@@ -13,7 +13,7 @@ interface Props extends PanelProps, PushedProps {
 const StyledPanel = styled.div<{ isPushed: boolean; showMenu: boolean }>`
   position: fixed;
   /* padding-top: ${({ showMenu }) => (showMenu ? "80px" : 0)}; */
-  top: 67px;
+  top: ${({ showMenu }) => (showMenu ? "67px" : 0)};
   border-top: 2px solid rgba(255,255,255,0.18);
   left: 0;
   display: flex;
