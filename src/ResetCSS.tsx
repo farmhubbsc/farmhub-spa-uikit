@@ -63,8 +63,15 @@ const ResetCSS = createGlobalStyle`
   *::after {
     box-sizing: border-box;
   }
+  
+  @font-face {
+    font-family: 'Farmhub'; /*a name to be used later*/
+    src: url('https://fonts.googleapis.com/css?family=Bai+Jamjuree'); /*URL to font*/
+  }
+
   * {
-    font-family: 'Kanit', sans-serif;
+    font-family: Farmhub;
+    /* font-family: 'Kanit', sans-serif; */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }

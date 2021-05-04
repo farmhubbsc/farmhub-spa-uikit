@@ -18,7 +18,7 @@ interface Props extends PanelProps, PushedProps {}
 const Icons = (IconModule as unknown) as { [key: string]: React.FC<SvgProps> };
 const { MoonIcon, SunIcon, LanguageIcon } = Icons;
 
-const Container = styled.div<{ showMenu: boolean }>`
+const Container = styled.div`
   flex: none;
   padding: 8px 4px;
   background-color: ${({ theme }) => theme.nav.background};
@@ -33,7 +33,7 @@ const Container = styled.div<{ showMenu: boolean }>`
   color: rgb(255, 255, 255);
 
   position: fixed;
-  bottom: ${({ showMenu }) => (showMenu ? "70px" : 0)};
+  bottom: 70px;
   width: 100%;
   /* /Custom Farmhub Style/ */
 `;
