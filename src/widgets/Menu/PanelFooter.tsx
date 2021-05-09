@@ -33,7 +33,10 @@ const Container = styled.div`
   color: rgb(255, 255, 255);
 
   position: fixed;
-  bottom: 70px;
+  
+  /* bottom: 70px; */
+  bottom: 0px;
+  
   width: 100%;
   /* /Custom Farmhub Style/ */
 `;
