@@ -175,7 +175,6 @@ const Menu: React.FC<NavProps> = ({
           links={links}
           priceLink={priceLink}
         />
-        <UserBlock account={account} login={login} logout={logout} />
         <Inner isPushed={isPushed} showMenu={showMenu}>
           {children}
         </Inner>
