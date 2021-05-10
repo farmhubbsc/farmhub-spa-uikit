@@ -32,3 +32,6 @@ export { default as SnekBreeding } from "./SnekBreeding";
 export { default as EagleFeeding } from "./EagleFeeding";
 export { default as CobraIcon } from "./CobraIcon";
 export { default as LiquidityIcon } from "./Liquidity";
+export { default as CertificateIcon } from "./Certificate";
+export { default as HouseIcon } from "./House";
+export { default as SwapIcon } from "./Swap";
