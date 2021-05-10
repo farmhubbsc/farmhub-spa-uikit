@@ -2015,12 +2015,13 @@ var Icon$8 = function (props) {
 
 var Icon$7 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 1792 1792" }, props),
-        React.createElement("image", { overflow: "visible", width: "1792", height: "1792", id: "icon_house_1792_px_image", xlinkHref: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSIxNzkyIiB2aWV3Qm94PSIwIDAgMTc5MiAxNzkyIiB3aWR0aD0iMTc5MiIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTQ3MiA5OTJ2NDgwcTAgMjYtMTkgNDV0LTQ1IDE5aC0zODR2LTM4NGgtMjU2djM4NGgtMzg0cS0yNiAwLTQ1LTE5dC0xOS00NXYtNDgwcTAtMSAuNS0zdC41LTNsNTc1LTQ3NCA1NzUgNDc0cTEgMiAxIDZ6bTIyMy02OWwtNjIgNzRxLTggOS0yMSAxMWgtM3EtMTMgMC0yMS03bC02OTItNTc3LTY5MiA1NzdxLTEyIDgtMjQgNy0xMy0yLTIxLTExbC02Mi03NHEtOC0xMC03LTIzLjV0MTEtMjEuNWw3MTktNTk5cTMyLTI2IDc2LTI2dDc2IDI2bDI0NCAyMDR2LTE5NXEwLTE0IDktMjN0MjMtOWgxOTJxMTQgMCAyMyA5dDkgMjN2NDA4bDIxOSAxODJxMTAgOCAxMSAyMS41dC03IDIzLjV6Ii8+PC9zdmc+" })));
+        React.createElement("path", { fill: "#c9c4d4", d: "M1472 992v480q0 26-19 45t-45 19h-384v-384h-256v384h-384q-26 0-45-19t-19-45v-480q0-1 .5-3t.5-3l575-474 575 474q1 2 1 6zm223-69l-62 74q-8 9-21 11h-3q-13 0-21-7l-692-577-692 577q-12 8-24 7-13-2-21-11l-62-74q-8-10-7-23.5t11-21.5l719-599q32-26 76-26t76 26l244 204v-195q0-14 9-23t23-9h192q14 0 23 9t9 23v408l219 182q10 8 11 21.5t-7 23.5z" })));
 };
 
 var Icon$6 = function (props) {
     return (React.createElement(Svg, __assign({ viewBox: "0 0 48 48" }, props),
-        React.createElement("image", { overflow: "visible", width: "48", height: "48", id: "icon_swap_48_px_image", xlinkHref: "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTM2IDhsLTggOGg2djE0YzAgMi4yMS0xLjc5IDQtNCA0cy00LTEuNzktNC00di0xNGMwLTQuNDEtMy41OS04LTgtOHMtOCAzLjU5LTggOHYxNGgtNmw4IDggOC04aC02di0xNGMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0djE0YzAgNC40MSAzLjU5IDggOCA4czgtMy41OSA4LTh2LTE0aDZsLTgtOHoiLz48cGF0aCBkPSJNMCAwaDQ4djQ4aC00OHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=" })));
+        React.createElement("path", { fill: "#c9c4d4", d: "M36 8l-8 8h6v14c0 2.21-1.79 4-4 4s-4-1.79-4-4v-14c0-4.41-3.59-8-8-8s-8 3.59-8 8v14h-6l8 8 8-8h-6v-14c0-2.21 1.79-4 4-4s4 1.79 4 4v14c0 4.41 3.59 8 8 8s8-3.59 8-8v-14h6l-8-8z" }),
+        React.createElement("path", { d: "M0 0h48v48h-48z", fill: "none" })));
 };
 
 var IconModule = /*#__PURE__*/Object.freeze({

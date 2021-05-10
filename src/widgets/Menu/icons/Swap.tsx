@@ -5,8 +5,7 @@ import { SvgProps } from "../../../components/Svg/types";
 const Icon: React.FC<SvgProps> = (props) => {
   return (
     <Svg viewBox="0 0 48 48" {...props}>
-      <image overflow="visible" width="48" height="48" id="icon_swap_48_px_image" xlinkHref="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgaGVpZ2h0PSI0OCIgdmlld0JveD0iMCAwIDQ4IDQ4IiB3aWR0aD0iNDgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHBhdGggZD0iTTM2IDhsLTggOGg2djE0YzAgMi4yMS0xLjc5IDQtNCA0cy00LTEuNzktNC00di0xNGMwLTQuNDEtMy41OS04LTgtOHMtOCAzLjU5LTggOHYxNGgtNmw4IDggOC04aC02di0xNGMwLTIuMjEgMS43OS00IDQtNHM0IDEuNzkgNCA0djE0YzAgNC40MSAzLjU5IDggOCA4czgtMy41OSA4LTh2LTE0aDZsLTgtOHoiLz48cGF0aCBkPSJNMCAwaDQ4djQ4aC00OHoiIGZpbGw9Im5vbmUiLz48L3N2Zz4=">
-      </image>
+      <path fill="#c9c4d4" d="M36 8l-8 8h6v14c0 2.21-1.79 4-4 4s-4-1.79-4-4v-14c0-4.41-3.59-8-8-8s-8 3.59-8 8v14h-6l8 8 8-8h-6v-14c0-2.21 1.79-4 4-4s4 1.79 4 4v14c0 4.41 3.59 8 8 8s8-3.59 8-8v-14h6l-8-8z"/><path d="M0 0h48v48h-48z" fill="none"/>
     </Svg>
   );
 };
