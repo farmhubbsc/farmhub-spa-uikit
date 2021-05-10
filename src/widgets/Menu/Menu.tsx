@@ -47,6 +47,13 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;
   color: rgb(255, 255, 255);
   /* /Custom Farmhub Style/ */
+
+  /* MOBILE ONLY, THE HEADER IS HIDDEN ON DESKTOP */
+
+  ${({ theme }) => theme.mediaQueries.nav} {
+    display: none;
+  }
+
 `;
 
 const BodyWrapper = styled.div`
@@ -141,7 +148,7 @@ const Menu: React.FC<NavProps> = ({
 
   return (
     <Wrapper>
-      {/* <StyledNav showMenu={showMenu}>
+      <StyledNav showMenu={showMenu}>
         <Logo
           isPushed={isPushed}
           togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
@@ -152,7 +159,7 @@ const Menu: React.FC<NavProps> = ({
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>
-      </StyledNav> */}
+      </StyledNav>
       <BodyWrapper>
         <Panel
           isPushed={isPushed}
