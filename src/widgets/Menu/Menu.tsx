@@ -48,6 +48,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   /* /Custom Farmhub Style/ */
 
   top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
+  position: fixed;
 
   /* Desktop only */
 
@@ -130,7 +131,6 @@ const Menu: React.FC<NavProps> = ({
         if (currentOffset < refPrevOffset.current) {
           // Has scroll up
           setShowMenu(true);
-          console.log("Just scrolled up, wtf (uikit Menu.tsx)")
         } else {
           // Has scroll down
           setShowMenu(false);
@@ -148,10 +148,6 @@ const Menu: React.FC<NavProps> = ({
 
   // Find the home link if provided
   const homeLink = links.find((link) => link.label === "Home");
-
-  console.log("What is going on?, wtf (uikit Menu.tsx)")
-  console.log(showMenu)
-  console.log("^showmenu")
 
   return (
     <Wrapper>

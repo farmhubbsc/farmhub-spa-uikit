@@ -2587,7 +2587,7 @@ var Avatar = function (_a) {
 var templateObject_1$4, templateObject_2$1;
 
 var Wrapper = styled.div(templateObject_1$3 || (templateObject_1$3 = __makeTemplateObject(["\n  position: relative;\n  width: 100%;\n"], ["\n  position: relative;\n  width: 100%;\n"])));
-var StyledNav = styled.nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  /* position: fixed; */\n  \n  /* top: ", "; */\n  /* top: 0; */\n  \n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n \n  height: ", "px;\n  \n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n\n  /* Custom Farmhub Style */\n  background: rgba(75, 0, 255, 0.15);\n  /* backdrop-filter: blur(2px); */\n  border-radius: 10px;\n  border: 2px solid rgba(255, 255, 255, 0.18);\n  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;\n  color: rgb(255, 255, 255);\n  /* /Custom Farmhub Style/ */\n\n  top: ", ";\n\n  /* Desktop only */\n\n  ", " {\n    opacity: 1;\n  }\n\n  /* -Desktop Only- */\n"], ["\n  /* position: fixed; */\n  \n  /* top: ", "; */\n  /* top: 0; */\n  \n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n \n  height: ", "px;\n  \n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n\n  /* Custom Farmhub Style */\n  background: rgba(75, 0, 255, 0.15);\n  /* backdrop-filter: blur(2px); */\n  border-radius: 10px;\n  border: 2px solid rgba(255, 255, 255, 0.18);\n  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;\n  color: rgb(255, 255, 255);\n  /* /Custom Farmhub Style/ */\n\n  top: ", ";\n\n  /* Desktop only */\n\n  ", " {\n    opacity: 1;\n  }\n\n  /* -Desktop Only- */\n"])), function (_a) {
+var StyledNav = styled.nav(templateObject_2 || (templateObject_2 = __makeTemplateObject(["\n  /* position: fixed; */\n  \n  /* top: ", "; */\n  /* top: 0; */\n  \n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n \n  height: ", "px;\n  \n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n\n  /* Custom Farmhub Style */\n  background: rgba(75, 0, 255, 0.15);\n  /* backdrop-filter: blur(2px); */\n  border-radius: 10px;\n  border: 2px solid rgba(255, 255, 255, 0.18);\n  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;\n  color: rgb(255, 255, 255);\n  /* /Custom Farmhub Style/ */\n\n  top: ", ";\n  position: fixed;\n\n  /* Desktop only */\n\n  ", " {\n    opacity: 1;\n  }\n\n  /* -Desktop Only- */\n"], ["\n  /* position: fixed; */\n  \n  /* top: ", "; */\n  /* top: 0; */\n  \n  left: 0;\n  transition: top 0.2s;\n  display: flex;\n  justify-content: space-between;\n  align-items: center;\n  padding-left: 8px;\n  padding-right: 16px;\n  width: 100%;\n \n  height: ", "px;\n  \n  background-color: ", ";\n  border-bottom: solid 2px rgba(133, 133, 133, 0.1);\n  z-index: 20;\n  transform: translate3d(0, 0, 0);\n\n  /* Custom Farmhub Style */\n  background: rgba(75, 0, 255, 0.15);\n  /* backdrop-filter: blur(2px); */\n  border-radius: 10px;\n  border: 2px solid rgba(255, 255, 255, 0.18);\n  box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;\n  color: rgb(255, 255, 255);\n  /* /Custom Farmhub Style/ */\n\n  top: ", ";\n  position: fixed;\n\n  /* Desktop only */\n\n  ", " {\n    opacity: 1;\n  }\n\n  /* -Desktop Only- */\n"])), function (_a) {
     var showMenu = _a.showMenu;
     return (showMenu ? 0 : "-" + MENU_HEIGHT + "px");
 }, MENU_HEIGHT, function (_a) {
@@ -2637,7 +2637,6 @@ var Menu = function (_a) {
                 if (currentOffset < refPrevOffset.current) {
                     // Has scroll up
                     setShowMenu(true);
-                    console.log("Just scrolled up, wtf (uikit Menu.tsx)");
                 }
                 else {
                     // Has scroll down
@@ -2654,9 +2653,6 @@ var Menu = function (_a) {
     }, []);
     // Find the home link if provided
     var homeLink = links.find(function (link) { return link.label === "Home"; });
-    console.log("What is going on?, wtf (uikit Menu.tsx)");
-    console.log(showMenu);
-    console.log("^showmenu");
     return (React.createElement(Wrapper, null,
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
