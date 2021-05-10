@@ -51,7 +51,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   /* Desktop only */
 
   ${({ theme }) => theme.mediaQueries.nav} {
-    background: red;
+    opacity: 1;
   }
 
   /* -Desktop Only- */
