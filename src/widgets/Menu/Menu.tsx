@@ -141,7 +141,7 @@ const Menu: React.FC<NavProps> = ({
 
   return (
     <Wrapper>
-      <StyledNav showMenu={showMenu}>
+      {/* <StyledNav showMenu={showMenu}>
         <Logo
           isPushed={isPushed}
           togglePush={() => setIsPushed((prevState: boolean) => !prevState)}
@@ -152,7 +152,7 @@ const Menu: React.FC<NavProps> = ({
           <UserBlock account={account} login={login} logout={logout} />
           {profile && <Avatar profile={profile} />}
         </Flex>
-      </StyledNav>
+      </StyledNav> */}
       <BodyWrapper>
         <Panel
           isPushed={isPushed}
