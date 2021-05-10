@@ -2637,6 +2637,7 @@ var Menu = function (_a) {
                 if (currentOffset < refPrevOffset.current) {
                     // Has scroll up
                     setShowMenu(true);
+                    console.log("Just scrolled up, wtf (uikit Menu.tsx)");
                 }
                 else {
                     // Has scroll down
@@ -2653,6 +2654,9 @@ var Menu = function (_a) {
     }, []);
     // Find the home link if provided
     var homeLink = links.find(function (link) { return link.label === "Home"; });
+    console.log("What is going on?, wtf (uikit Menu.tsx)");
+    console.log(showMenu);
+    console.log("^showmenu");
     return (React.createElement(Wrapper, null,
         React.createElement(StyledNav, { showMenu: showMenu },
             React.createElement(Logo, { isPushed: isPushed, togglePush: function () { return setIsPushed(function (prevState) { return !prevState; }); }, isDark: isDark, href: (_b = homeLink === null || homeLink === void 0 ? void 0 : homeLink.href) !== null && _b !== void 0 ? _b : "/" }),
