@@ -48,12 +48,13 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   color: rgb(255, 255, 255);
   /* /Custom Farmhub Style/ */
 
-  /* MOBILE ONLY, THE HEADER IS HIDDEN ON DESKTOP */
+  /* Desktop only */
 
   ${({ theme }) => theme.mediaQueries.nav} {
-    display: none;
+    background: red;
   }
 
+  /* -Desktop Only- */
 `;
 
 const BodyWrapper = styled.div`
