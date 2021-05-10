@@ -2671,6 +2671,7 @@ var Menu = function (_a) {
                 profile && React__default['default'].createElement(Avatar, { profile: profile }))),
         React__default['default'].createElement(BodyWrapper, null,
             React__default['default'].createElement(Panel, { isPushed: isPushed, isMobile: isMobile, showMenu: showMenu, isDark: isDark, toggleTheme: toggleTheme, langs: langs, setLang: setLang, currentLang: currentLang, cakePriceUsd: cakePriceUsd, pushNav: setIsPushed, links: links, priceLink: priceLink }),
+            React__default['default'].createElement(UserBlock, { account: account, login: login, logout: logout }),
             React__default['default'].createElement(Inner, { isPushed: isPushed, showMenu: showMenu }, children),
             React__default['default'].createElement(MobileOnlyOverlay, { show: isPushed, onClick: function () { return setIsPushed(false); }, role: "presentation" }))));
 };
