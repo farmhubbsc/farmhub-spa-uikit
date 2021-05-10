@@ -20,7 +20,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   /* position: fixed; */
   
   /* top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)}; */
-  top: 0;
+  /* top: 0; */
   
   left: 0;
   transition: top 0.2s;
@@ -31,8 +31,7 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   padding-right: 16px;
   width: 100%;
  
-  /* height: ${MENU_HEIGHT}px; */
-  height: 64px;
+  height: ${MENU_HEIGHT}px;
   
   background-color: ${({ theme }) => theme.nav.background};
   border-bottom: solid 2px rgba(133, 133, 133, 0.1);
@@ -47,6 +46,8 @@ const StyledNav = styled.nav<{ showMenu: boolean }>`
   box-shadow: rgb(31 38 135 / 37%) 0px 8px 32px 0px;
   color: rgb(255, 255, 255);
   /* /Custom Farmhub Style/ */
+
+  top: ${({ showMenu }) => (showMenu ? 0 : `-${MENU_HEIGHT}px`)};
 
   /* Desktop only */
 
