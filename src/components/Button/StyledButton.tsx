@@ -68,6 +68,10 @@ const StyledButton = styled.button<ButtonProps>`
   transition: background-color 0.2s;
   opacity: ${({ isLoading }) => (isLoading ? 0.5 : 1)};
 
+  border-radius: 3px;
+  background: rgba(255,255,255,0.3);
+  border: 1px solid #999;
+
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
     background-color: ${getButtonVariantProp("backgroundHover")};
     border-color: ${getButtonVariantProp("borderColorHover")};
