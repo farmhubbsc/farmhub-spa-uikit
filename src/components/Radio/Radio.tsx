@@ -37,6 +37,11 @@ const Radio = styled.input.attrs({ type: "radio" })<RadioProps>`
   background-color: ${({ theme }) => theme.colors.input};
   box-shadow: ${({ theme }) => theme.shadows.inset};
 
+  /* Custom Farmhub Style */
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.20) !important;
+  /* Farmhub */
+
   &:after {
     border-radius: 50%;
     content: "";
