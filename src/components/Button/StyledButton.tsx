@@ -68,6 +68,24 @@ const StyledButton = styled.button<ButtonProps>`
   transition: background-color 0.2s;
   opacity: ${({ isLoading }) => (isLoading ? 0.5 : 1)};
 
+  /* FARMHUB STYLE */
+
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+  align-items: center;
+  height: 48px;
+  padding: 0px 8px;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.7) !important;
+  background-color: rgba(255, 255, 255, 0.20) !important;
+  box-shadow: rgb(75 0 255 / 22%) 0px 2px 4px 0px !important;
+  backdrop-filter: blur(5px) !important;
+  border-radius: 3px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  transition: all 0.2s ease 0s;
+  flex-shrink: 0;
+
   &:hover:not(:disabled):not(.button--disabled):not(:active) {
     background-color: ${getButtonVariantProp("backgroundHover")};
     border-color: ${getButtonVariantProp("borderColorHover")};
