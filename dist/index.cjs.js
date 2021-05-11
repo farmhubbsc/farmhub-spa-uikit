@@ -2481,7 +2481,7 @@ var connectors = [
 ];
 var localStorageKey = "accountStatus";
 
-var connectStyle$1 = {
+var connectStyle$2 = {
     borderRadius: '3px',
     background: 'rgba(255,255,255,0.3)',
     border: '1px solid #999',
@@ -2494,7 +2494,7 @@ var WalletCard = function (_a) {
             login(walletConfig.connectorId);
             window.localStorage.setItem(localStorageKey, "1");
             onDismiss();
-        }, style: connectStyle$1, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
+        }, style: connectStyle$2, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
         React__default['default'].createElement(Text, { bold: true, color: "primary", mr: "16px" }, title),
         React__default['default'].createElement(Icon, { width: "32px" })));
 };
@@ -2542,7 +2542,7 @@ var CopyToClipboard = function (_a) {
 };
 var templateObject_1$5, templateObject_2$2;
 
-var connectStyle = {
+var connectStyle$1 = {
     borderRadius: '3px',
     background: 'rgba(255,255,255,0.3)',
     border: '1px solid #999',
@@ -2556,7 +2556,7 @@ var AccountModal = function (_a) {
             React__default['default'].createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
             React__default['default'].createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React__default['default'].createElement(Flex, { justifyContent: "center" },
-            React__default['default'].createElement(Button, { size: "sm", variant: "secondary", style: connectStyle, onClick: function () {
+            React__default['default'].createElement(Button, { size: "sm", variant: "secondary", style: connectStyle$1, onClick: function () {
                     logout();
                     window.localStorage.removeItem(localStorageKey);
                     onDismiss();
@@ -2570,13 +2570,19 @@ var useWalletModal = function (login, logout, account) {
     return { onPresentConnectModal: onPresentConnectModal, onPresentAccountModal: onPresentAccountModal };
 };
 
+var connectStyle = {
+    borderRadius: '3px',
+    background: 'rgba(255,255,255,0.3)',
+    border: '1px solid #999',
+    justifyContent: 'space-between',
+};
 var UserBlock = function (_a) {
     var account = _a.account, login = _a.login, logout = _a.logout;
     var _b = useWalletModal(login, logout, account), onPresentConnectModal = _b.onPresentConnectModal, onPresentAccountModal = _b.onPresentAccountModal;
     var accountEllipsis = account ? account.substring(0, 4) + "..." + account.substring(account.length - 4) : null;
-    return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(Button, { size: "sm", variant: "tertiary", onClick: function () {
+    return (React__default['default'].createElement("div", null, account ? (React__default['default'].createElement(Button, { size: "sm", variant: "tertiary", style: connectStyle, onClick: function () {
             onPresentAccountModal();
-        } }, accountEllipsis)) : (React__default['default'].createElement(Button, { size: "sm", onClick: function () {
+        } }, accountEllipsis)) : (React__default['default'].createElement(Button, { size: "sm", style: connectStyle, onClick: function () {
             onPresentConnectModal();
         } }, "Connect"))));
 };
