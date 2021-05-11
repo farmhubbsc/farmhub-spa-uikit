@@ -13,6 +13,13 @@ interface Props {
   onDismiss?: () => void;
 }
 
+const connectStyle = {
+  borderRadius: '3px',
+  background: 'rgba(255,255,255,0.3)',
+  border: '1px solid #999',
+  justifyContent: 'space-between',
+}
+
 const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null }) => (
   <Modal title="Your wallet" onDismiss={onDismiss}>
     <Text
@@ -32,6 +39,7 @@ const AccountModal: React.FC<Props> = ({ account, logout, onDismiss = () => null
       <Button
         size="sm"
         variant="secondary"
+        style={connectStyle}
         onClick={() => {
           logout();
           window.localStorage.removeItem(localStorageKey);

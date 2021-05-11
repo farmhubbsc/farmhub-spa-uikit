@@ -2468,7 +2468,7 @@ var connectors = [
 ];
 var localStorageKey = "accountStatus";
 
-var connectStyle = {
+var connectStyle$1 = {
     borderRadius: '3px',
     background: 'rgba(255,255,255,0.3)',
     border: '1px solid #999',
@@ -2481,7 +2481,7 @@ var WalletCard = function (_a) {
             login(walletConfig.connectorId);
             window.localStorage.setItem(localStorageKey, "1");
             onDismiss();
-        }, style: connectStyle, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
+        }, style: connectStyle$1, mb: mb, id: "wallet-connect-" + title.toLocaleLowerCase() },
         React.createElement(Text, { bold: true, color: "primary", mr: "16px" }, title),
         React.createElement(Icon, { width: "32px" })));
 };
@@ -2529,6 +2529,12 @@ var CopyToClipboard = function (_a) {
 };
 var templateObject_1$5, templateObject_2$2;
 
+var connectStyle = {
+    borderRadius: '3px',
+    background: 'rgba(255,255,255,0.3)',
+    border: '1px solid #999',
+    justifyContent: 'space-between',
+};
 var AccountModal = function (_a) {
     var account = _a.account, logout = _a.logout, _b = _a.onDismiss, onDismiss = _b === void 0 ? function () { return null; } : _b;
     return (React.createElement(Modal, { title: "Your wallet", onDismiss: onDismiss },
@@ -2537,7 +2543,7 @@ var AccountModal = function (_a) {
             React.createElement(LinkExternal, { small: true, href: "https://bscscan.com/address/" + account, mr: "16px" }, "View on BscScan"),
             React.createElement(CopyToClipboard, { toCopy: account }, "Copy Address")),
         React.createElement(Flex, { justifyContent: "center" },
-            React.createElement(Button, { size: "sm", variant: "secondary", onClick: function () {
+            React.createElement(Button, { size: "sm", variant: "secondary", style: connectStyle, onClick: function () {
                     logout();
                     window.localStorage.removeItem(localStorageKey);
                     onDismiss();
