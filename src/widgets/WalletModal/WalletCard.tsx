@@ -11,6 +11,14 @@ interface Props {
   mb: string;
 }
 
+
+const connectStyle = {
+  borderRadius: '3px',
+  background: 'rgba(255,255,255,0.3)',
+  border: '1px solid #999',
+  justifyContent: 'space-between',
+}
+
 const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => {
   const { title, icon: Icon } = walletConfig;
   return (
@@ -22,7 +30,7 @@ const WalletCard: React.FC<Props> = ({ login, walletConfig, onDismiss, mb }) => 
         window.localStorage.setItem(localStorageKey, "1");
         onDismiss();
       }}
-      style={{ justifyContent: "space-between" }}
+      style={connectStyle}
       mb={mb}
       id={`wallet-connect-${title.toLocaleLowerCase()}`}
     >
