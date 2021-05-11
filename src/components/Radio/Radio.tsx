@@ -43,7 +43,8 @@ const Radio = styled.input.attrs({ type: "radio" })<RadioProps>`
   /* Farmhub */
 
   &:after {
-    border-radius: 50%;
+    /* border-radius: 50%; */
+    border-radius: 3px;
     content: "";
     height: ${getCheckedScale};
     left: 6px;
