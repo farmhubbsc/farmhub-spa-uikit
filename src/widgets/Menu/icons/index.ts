@@ -37,3 +37,4 @@ export { default as CertificateIcon } from "./Certificate";
 export { default as HouseIcon } from "./House";
 export { default as SwapIcon } from "./Swap";
 export { default as BarnIcon } from "./Barn";
+export { default as WalletIcon } from './Wallet';
